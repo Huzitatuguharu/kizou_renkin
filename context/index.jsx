@@ -32,7 +32,12 @@ createWeb3Modal({
   chains: [testnet, mainnet],
   projectId,
   enableAnalytics: true,
-  themeMode: "light", // Optional - defaults to your Cloud configuration
+  themeMode: "dark",
+  themeVariables: {
+    // "--w3m-color-mix": "#aaa",
+    // "--w3m-accent": "#aaa",
+    "--w3m-color-mix-strength": 10,
+  },
 });
 
 export function Web3ModalProvider({ children }) {

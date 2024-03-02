@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "kizou-renkin",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,14 +10,12 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.24.1",
-    "@wagmi/chains": "^1.8.0",
     "@web3modal/ethers": "^4.0.10",
     "ethers": "^6.11.1",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "viem": "^2.7.16",
-    "wagmi": "^2.5.7"
+    "viem": "^2.7.16"
   },
   "devDependencies": {
     "eslint": "^8",

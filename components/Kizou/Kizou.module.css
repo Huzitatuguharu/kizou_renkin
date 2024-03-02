@@ -1,0 +1,138 @@
+@media screen and (max-width: 501px) {
+  .w3mButton {
+    margin-left: -1.5rem;
+  }
+}
+
+.h1 {
+  font-size: 3rem;
+  writing-mode: vertical-rl;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 650px;
+}
+
+@media screen and (max-width: 799px) {
+  .mainContainer {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.sectionBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.sectionBoxTitle {
+  font-size: 1.5rem;
+}
+
+.subText {
+  font-size: 1rem;
+  line-height: 165%;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  width: 100%;
+}
+
+.checkbox,
+.radio {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  accent-color: var(--white-color);
+}
+
+.checkbox input {
+  margin-right: 0.5rem;
+}
+
+.radio input {
+  margin-right: 0.4rem;
+}
+
+.chainList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 3rem 0.5rem;
+  border-top: var(--gray200-color) 1px solid;
+}
+
+.termsList,
+.addressList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+
+.button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.1rem 5rem 1.2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+  color: var(--black-color);
+  transition: background 300ms, border 200ms;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 799px) {
+  .button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1.1rem 3rem 1.2rem;
+    border: 1px solid var(--white-color);
+  }
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background: var(--black-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+  }
+}
+
+.button:disabled {
+  background: var(--black-color);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
