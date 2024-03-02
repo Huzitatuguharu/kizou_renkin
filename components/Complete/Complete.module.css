@@ -18,7 +18,6 @@
   align-items: center;
   gap: 3rem;
   max-width: 650px;
-  width: 100%;
 }
 
 @media screen and (max-width: 799px) {
@@ -36,69 +35,11 @@
   gap: 3rem;
 }
 
-.sectionBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.1rem;
-}
-
-.sectionBoxTitle {
-  font-size: 1.5rem;
-}
-
 .subText {
   font-size: 1rem;
-  line-height: 165%;
+  line-height: 180%;
+  text-align: center;
 }
-
-
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3.5rem;
-  width: 100%;
-}
-
-.checkbox,
-.radio {
-  display: block;
-  cursor: pointer;
-  user-select: none;
-  accent-color: var(--white-color);
-}
-
-.checkbox input {
-  margin-right: 0.5rem;
-}
-
-.radio input {
-  margin-right: 0.4rem;
-}
-
-.chainList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 3rem 0.5rem;
-  border-top: var(--gray200-color) 1px solid;
-}
-
-.termsList,
-.addressList {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 0.5rem;
-  width: fit-content;
-}
-
 
 .button {
   font-size: 1.5rem;
@@ -136,16 +77,4 @@
   border: 1px solid var(--white-color);
   cursor: not-allowed;
   opacity: 0.5;
-}
-
-.linkText {
-  font-size: 0.8rem;
-  color: var(--white-color);
-  cursor: pointer;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .linkText:hover {
-    opacity: 0.7;
-  }
 }

@@ -32,7 +32,7 @@ export default function Kizou() {
             <div className={styles.w3mButton}>
               <w3m-account-button balance="show" />
             </div>
-            <form className={styles.form}>
+            <form className={styles.form} action="/complete">
               <section className={styles.sectionBox}>
                 <h2 className={styles.sectionBoxTitle}>1.チェーン選択</h2>
                 <w3m-network-button />
@@ -115,9 +115,9 @@ export default function Kizou() {
                   注意事項すべてにチェックを入れて登録してください
                 </p>
                 <button
-                  type="submit"
                   disabled={!allChecked}
                   className={styles.button}
+                  type="submit"
                 >
                   寄贈錬金に登録
                 </button>
@@ -127,14 +127,20 @@ export default function Kizou() {
         ) : (
           <div className={styles.innerContainer}>
             <h1 className={styles.h1}>寄贈錬金</h1>
-            <p className={styles.subText}>
-             死んだときに自動で資産を寄贈します
-            </p>
+            <p className={styles.subText}>死んだときに自動で資産を寄贈します</p>
 
             <button onClick={() => open()} className={styles.button}>
               Walletを接続する
             </button>
             {/* <w3m-button label="Walletを接続" /> */}
+            <a
+              href="https://huzitatuguharu.github.io/countdown_2/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.linkText}
+            >
+              余命までの時間を調べる
+            </a>
           </div>
         )}
       </div>
