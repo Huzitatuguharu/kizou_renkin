@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ja">
       <body className={gothic.className}>
-        <h1 className={styles.h1}>寄贈錬金</h1>
+        <sapn className={styles.bigText}>寄贈錬金</sapn>
         <Web3ModalProvider>{children}</Web3ModalProvider>
       </body>
     </html>

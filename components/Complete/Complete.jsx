@@ -6,8 +6,7 @@ import { useDisconnect } from "@web3modal/ethers/react";
 import React, { useState } from "react";
 
 export default function Complete() {
-  const { address, chainId, isConnected } = useWeb3ModalAccount();
-  const { disconnect } = useDisconnect();
+  const { isConnected } = useWeb3ModalAccount();
   return (
     <main className={styles.mainContainer}>
       <div>
@@ -24,7 +23,7 @@ export default function Complete() {
             </div>
           </div>
         ) : (
-         <></>
+          <></>
         )}
       </div>
       <Link className={styles.button} href="/">

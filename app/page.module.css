@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10rem 6rem;
   min-height: 100vh;
@@ -15,7 +15,7 @@
   }
 }
 
-.h1 {
+.bigText {
   font-size: 24vh;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
   width: 100%;
@@ -28,4 +28,10 @@
   z-index: -10;
   writing-mode: vertical-rl;
   color: var(--white-color);
+}
+
+@media screen and (max-width: 501px) {
+  .w3mButton {
+    margin-left: -1.5rem;
+  }
 }
