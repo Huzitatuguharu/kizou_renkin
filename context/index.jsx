@@ -1,8 +1,6 @@
 "use client";
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 
-// const { adress } = useWeb3ModalAccount();
-
 // 1. Get projectId
 const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
 // 2. Set chains
@@ -34,8 +32,6 @@ createWeb3Modal({
   enableAnalytics: true,
   themeMode: "dark",
   themeVariables: {
-    // "--w3m-color-mix": "#aaa",
-    // "--w3m-accent": "#aaa",
     "--w3m-color-mix-strength": 10,
   },
 });

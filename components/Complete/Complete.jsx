@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
 import styles from "./Complete.module.css";
-import { useWeb3ModalAccount } from "@web3modal/ethers/react";
-import { useDisconnect } from "@web3modal/ethers/react";
-import React, { useState } from "react";
+import { useWeb3ModalAccount, useDisconnect } from "@web3modal/ethers/react";
+import React from "react";
 
+// disconnect();
 export default function Complete() {
+  const { disconnect } = useDisconnect();
   const { isConnected } = useWeb3ModalAccount();
   return (
     <main className={styles.mainContainer}>
@@ -21,14 +22,19 @@ export default function Complete() {
             <div className={styles.w3mButton}>
               <w3m-account-button balance="show" />
             </div>
+            <button onClick={() => disconnect()} className={styles.button}>
+              Walletを切断する
+            </button>
           </div>
         ) : (
-          <></>
+          <section className={styles.innerContainer}>
+            <h1 className={styles.h1}>寄贈錬金</h1>
+            <Link className={styles.button} href="/">
+              トップへ
+            </Link>
+          </section>
         )}
       </div>
-      <Link className={styles.button} href="/">
-        トップへ
-      </Link>
     </main>
   );
 }

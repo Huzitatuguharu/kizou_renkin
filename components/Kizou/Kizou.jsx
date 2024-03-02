@@ -37,14 +37,14 @@ export default function Kizou() {
     setTimeout(() => {
       router.push("/complete");
       // setIsLoading(false) はここでは呼び出さない
-    }, 2000);
+    }, 1200);
   };
   return (
     <main className={styles.mainContainer}>
       <div>
         {isConnected ? (
           isLoading ? (
-            <div>送信中...</div> // ローディング画面の表示
+            <p>送信中...</p> // ローディング画面の表示
           ) : (
             <div className={styles.innerContainer}>
               <h1 className={styles.h1}>登録</h1>
@@ -61,10 +61,10 @@ export default function Kizou() {
                   <w3m-network-button />
                   <div className={styles.chainList}>
                     <p>対応チェーン</p>
-                    <ul>
+                    <ol>
                       <li>Mumbai（Testnet）</li>
                       <li>Ethereum</li>
-                    </ul>
+                    </ol>
                   </div>
                 </section>
                 <section className={styles.sectionBox}>
@@ -91,12 +91,12 @@ export default function Kizou() {
                 </section>
                 <section className={styles.sectionBox}>
                   <h2 className={styles.sectionBoxTitle}>
-                    3.メールアドレスの登録
+                    3.メールアドレスの登録(任意)
                   </h2>
                   <p className={styles.subText}>
                     登録したアドレスに年に1回、リマインドメールを送信します
                   </p>
-                  <div className={styles.addressList}>
+                  <div>
                     <input
                       type="email"
                       id="email"
@@ -155,19 +155,23 @@ export default function Kizou() {
           )
         ) : (
           <div className={styles.innerContainer}>
-            <h1 className={styles.h1}>寄贈錬金</h1>
-            <p className={styles.subText}>死んだときに自動で資産を寄贈します</p>
+            <section className={styles.sectionBox}>
+              <h1 className={styles.h1}>寄贈錬金</h1>
+              <p className={styles.subTitleText}>
+                死んだときに自動で資産を寄贈します
+              </p>
+              <button onClick={() => open()} className={styles.button}>
+                Walletを接続する
+              </button>
+            </section>
 
-            <button onClick={() => open()} className={styles.button}>
-              Walletを接続する
-            </button>
             <a
               href="https://huzitatuguharu.github.io/countdown_2/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.linkText}
             >
-              余命までの時間を調べる
+              ? 余命までの時間を調べる
             </a>
           </div>
         )}

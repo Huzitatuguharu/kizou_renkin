@@ -29,9 +29,3 @@
   writing-mode: vertical-rl;
   color: var(--white-color);
 }
-
-@media screen and (max-width: 501px) {
-  .w3mButton {
-    margin-left: -1.5rem;
-  }
-}

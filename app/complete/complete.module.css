@@ -14,18 +14,3 @@
     padding: 5rem 1.5rem;
   }
 }
-
-.h1 {
-  font-size: 24vh;
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  width: 100%;
-  letter-spacing: 0.3rem;
-  font-weight: 300;
-  opacity: 0.1;
-  text-align: center;
-  position: fixed;
-  right: 32vw;
-  z-index: -10;
-  writing-mode: vertical-rl;
-  color: var(--white-color);
-}
